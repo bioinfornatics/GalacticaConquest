@@ -1,29 +1,36 @@
 package game.bioinfornatics.galacticaconquest;
 
 
-
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.util.AttributeSet;
-import android.view.LayoutInflater;
-import android.widget.LinearLayout;
-import android.widget.Button;
-import android.support.v7.appcompat.R;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
 import android.util.Log;
-//import android.text.*;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 
 public class HorizontalNumberPicker extends LinearLayout {
-	View numberPicker;
-	Button minus;
-	Button plus;
-	EditText text;
+	ViewGroup   numberPicker;
+	Button      minus;
+	Button      plus;
+	EditText    text;
 	
     public HorizontalNumberPicker(Context context, AttributeSet attrs) {
         super(context, attrs);
-		numberPicker 	= findViewById( R.layout.horizontal_number_picker );
+
+        TypedArray      attributes  = context.getTheme().obtainStyledAttributes(attrs, R.styleable.horizontal_number_picker, 0, 0);
+        TextView        textView;
+        //LinearLayout ViewContainer=(LinearLayout) (LayoutInflater.from(context)).inflate(attributes.getResourceId(R.styleable.horizontal_number_picker_maxValueFromTextId, R.layout.[defaultValue]), null);
+        attributes.recycle();
+
+        LayoutInflater layoutInflater   = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        numberPicker                    = (ViewGroup) layoutInflater.inflate(R.layout.horizontal_number_picker, this);
+
 		minus 			= (Button) numberPicker.findViewById( R.id.btn_minus );
 		plus 			= (Button) numberPicker.findViewById( R.id.btn_plus );
 		text            = (EditText) numberPicker.findViewById( R.id.edit_text );
@@ -32,10 +39,7 @@ public class HorizontalNumberPicker extends LinearLayout {
 		Log.i( "info", bm.toString()  );
 		
 		minus.setOnClickListener( minusHandler );
-		plus.setOnClickListener( plusHandler );
-		
-        LayoutInflater layoutInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        layoutInflater.inflate(R.layout.horizontal_number_picker, this);
+		plus.setOnClickListener(plusHandler);
     }
 
 	View.OnClickListener minusHandler = new View.OnClickListener( ) {

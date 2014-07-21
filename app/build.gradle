@@ -1,12 +1,9 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        config {
-        }
-    }
     compileSdkVersion 20
     buildToolsVersion '20.0.0'
+    
     defaultConfig {
         applicationId "game.bioinfornatics.galacticaconquest"
         minSdkVersion 17
@@ -19,8 +16,6 @@ android {
             runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-    }
-    dexOptions {
     }
 }
 
