@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_launcher"
+        android:id="@+id/avatar"
+        android:layout_marginRight="25dip"
+        android:layout_marginBottom="25dip"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:text="name"
+        android:layout_toRightOf="@id/avatar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/race"
+        android:text="race"
+        android:layout_toRightOf="@id/avatar"
+        android:layout_below="@id/name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gold"
+        android:text="gold"
+        android:layout_toRightOf="@id/avatar"
+        android:layout_below="@id/race"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/diamond"
+        android:text="diamond"
+        android:layout_toRightOf="@id/avatar"
+        android:layout_below="@id/gold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/researchLabel"
+        android:text="Research"
+        android:layout_marginLeft="25dip"
+        android:layout_below="@id/avatar"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/currentResearch"
+        android:src="@drawable/ic_launcher"
+        android:layout_below="@id/researchLabel"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/researchTimeLabel"
+        android:text="time"
+        android:layout_below="@id/currentResearch"
+        android:layout_marginBottom="25dip"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buildingLabel"
+        android:text="Building"
+        android:layout_marginLeft="25dip"
+        android:layout_below="@id/avatar"
+        android:layout_toRightOf="@id/avatar"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/currentBuilding"
+        android:src="@drawable/ic_launcher"
+        android:layout_toRightOf="@id/avatar"
+        android:layout_below="@id/buildingLabel"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buildingTimeLabel"
+        android:text="time"
+        android:layout_toRightOf="@id/avatar"
+        android:layout_below="@id/currentBuilding"
+        android:layout_marginBottom="25dip"/>
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/map"
+        android:src="@drawable/ic_launcher"
+        android:layout_below="@id/buildingTimeLabel"/>
+
+
+</RelativeLayout>

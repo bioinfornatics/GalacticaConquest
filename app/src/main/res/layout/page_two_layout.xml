@@ -1,0 +1,170 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/researchPointLabel"
+            android:text="Research point Left"
+            android:layout_marginBottom="25dip"
+            android:layout_marginRight="25dip"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/researchPointField"
+            android:text="10"
+            android:layout_toRightOf="@id/researchPointLabel"
+            android:layout_marginBottom="25dip"/>
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/shields"
+            android:layout_marginRight="25dip"
+            android:layout_marginBottom="25dip"
+            android:layout_below="@id/researchPointLabel"/>
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shieldsNumberPicker"
+            android:orientation="horizontal"
+            android:layout_below="@+id/researchPointLabel"
+            android:layout_toRightOf="@id/shields" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/armouring"
+            android:layout_marginRight="25dip"
+            android:layout_marginBottom="25dip"
+            android:layout_below="@id/shields"/>
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/armouringNumberPicker"
+            android:orientation="horizontal"
+            android:layout_below="@+id/shields"
+            android:layout_toRightOf="@id/armouring" />
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/energeticsWeapons"
+            android:layout_marginRight="25dip"
+            android:layout_marginBottom="25dip"
+            android:layout_below="@id/armouring"/>
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/energeticsWeaponsNumberPicker"
+            android:orientation="horizontal"
+            android:layout_below="@+id/armouring"
+            android:layout_toRightOf="@id/energeticsWeapons" />
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/missilesWeapons"
+            android:layout_marginRight="25dip"
+            android:layout_marginBottom="25dip"
+            android:layout_below="@id/energeticsWeapons"/>
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/missilesWeaponsNumberPicker"
+            android:orientation="horizontal"
+            android:layout_below="@+id/energeticsWeapons"
+            android:layout_toRightOf="@id/missilesWeapons" />
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/ionicReactor"
+            android:layout_marginRight="25dip"
+            android:layout_marginBottom="25dip"
+            android:layout_below="@id/missilesWeapons"/>
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ionicReactorNumberPicker"
+            android:orientation="horizontal"
+            android:layout_below="@+id/missilesWeapons"
+            android:layout_toRightOf="@id/ionicReactor" />
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/teleporter"
+            android:layout_marginRight="25dip"
+            android:layout_marginBottom="25dip"
+            android:layout_below="@id/ionicReactor"/>
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teleporterNumberPicker"
+            android:orientation="horizontal"
+            android:layout_below="@+id/ionicReactor"
+            android:layout_toRightOf="@id/teleporter" />
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/nuclearReactor"
+            android:layout_marginRight="25dip"
+            android:layout_marginBottom="25dip"
+            android:layout_below="@id/ionicReactor"/>
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nuclearReactorNumberPicker"
+            android:orientation="horizontal"
+            android:layout_below="@+id/ionicReactor"
+            android:layout_toRightOf="@id/nuclearReactor" />
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/hyperspaceReactor"
+            android:layout_marginRight="25dip"
+            android:layout_marginBottom="25dip"
+            android:layout_below="@id/nuclearReactor"/>
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hyperspaceReactorNumberPicker"
+            android:orientation="horizontal"
+            android:layout_below="@+id/nuclearReactor"
+            android:layout_toRightOf="@id/hyperspaceReactor" />
+    </RelativeLayout>
+</ScrollView>
