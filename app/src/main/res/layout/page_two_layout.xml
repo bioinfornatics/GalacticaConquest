@@ -41,11 +41,10 @@
             android:layout_marginRight="25dip"
             android:layout_marginBottom="25dip"
             android:layout_below="@id/researchPointLabel"/>
-        <NumberPicker
+        <game.bioinfornatics.galacticaconquest.HorizontalNumberPicker
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/shieldsNumberPicker"
-            android:orientation="horizontal"
             android:layout_below="@+id/researchPointLabel"
             android:layout_toRightOf="@id/shields" />
 
@@ -57,7 +56,7 @@
             android:layout_marginRight="25dip"
             android:layout_marginBottom="25dip"
             android:layout_below="@id/shields"/>
-        <NumberPicker
+        <game.bioinfornatics.galacticaconquest.HorizontalNumberPicker
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/armouringNumberPicker"
@@ -74,7 +73,7 @@
             android:layout_marginRight="25dip"
             android:layout_marginBottom="25dip"
             android:layout_below="@id/armouring"/>
-        <NumberPicker
+        <game.bioinfornatics.galacticaconquest.HorizontalNumberPicker
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/energeticsWeaponsNumberPicker"
@@ -91,7 +90,7 @@
             android:layout_marginRight="25dip"
             android:layout_marginBottom="25dip"
             android:layout_below="@id/energeticsWeapons"/>
-        <NumberPicker
+        <game.bioinfornatics.galacticaconquest.HorizontalNumberPicker
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/missilesWeaponsNumberPicker"
@@ -108,7 +107,7 @@
             android:layout_marginRight="25dip"
             android:layout_marginBottom="25dip"
             android:layout_below="@id/missilesWeapons"/>
-        <NumberPicker
+        <game.bioinfornatics.galacticaconquest.HorizontalNumberPicker
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ionicReactorNumberPicker"
@@ -125,7 +124,7 @@
             android:layout_marginRight="25dip"
             android:layout_marginBottom="25dip"
             android:layout_below="@id/ionicReactor"/>
-        <NumberPicker
+        <game.bioinfornatics.galacticaconquest.HorizontalNumberPicker
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/teleporterNumberPicker"
@@ -142,7 +141,7 @@
             android:layout_marginRight="25dip"
             android:layout_marginBottom="25dip"
             android:layout_below="@id/ionicReactor"/>
-        <NumberPicker
+        <game.bioinfornatics.galacticaconquest.HorizontalNumberPicker
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/nuclearReactorNumberPicker"
@@ -159,7 +158,7 @@
             android:layout_marginRight="25dip"
             android:layout_marginBottom="25dip"
             android:layout_below="@id/nuclearReactor"/>
-        <NumberPicker
+        <game.bioinfornatics.galacticaconquest.HorizontalNumberPicker
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/hyperspaceReactorNumberPicker"
