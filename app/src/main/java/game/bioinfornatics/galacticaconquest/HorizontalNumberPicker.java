@@ -24,9 +24,10 @@ public class HorizontalNumberPicker extends LinearLayout {
         super(context, attrs);
 
         TypedArray      attributes  = context.getTheme().obtainStyledAttributes(attrs, R.styleable.horizontal_number_picker, 0, 0);
-        TextView        textView;
-        //LinearLayout ViewContainer=(LinearLayout) (LayoutInflater.from(context)).inflate(attributes.getResourceId(R.styleable.horizontal_number_picker_maxValueFromTextId, R.layout.[defaultValue]), null);
-        attributes.recycle();
+        //int             textViewId  = attributes.getInt(R.styleable.horizontal_number_picker_maxValueFromTextId, defStyle );
+        //Log.i( "info", String.valueOf(textViewId));
+		//LinearLayout ViewContainer=(LinearLayout) (LayoutInflater.from(context)).inflate(attributes.getResourceId(R.styleable.horizontal_number_picker_maxValueFromTextId, R.layout.[defaultValue]), null);
+        //attributes.recycle();
 
         LayoutInflater layoutInflater   = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         numberPicker                    = (ViewGroup) layoutInflater.inflate(R.layout.horizontal_number_picker, this);

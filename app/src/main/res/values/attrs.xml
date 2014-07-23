@@ -2,6 +2,5 @@
 <resources>
     <declare-styleable name="horizontal_number_picker">
         <attr name="maxValueFromTextId" format="reference"/>
-        <attr name="layout" format="reference"/>
     </declare-styleable>
 </resources>
